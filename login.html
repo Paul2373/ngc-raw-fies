@@ -1,108 +1,61 @@
-<!DOCTYPE html>
+<!DOCTYPE>
+
 <html>
 
 <head>
-  <title>
-  Ngerian Gaming Community- a community for Nigerians &amp; developer - About </title>
-  <meta charset="utf-8">
-  <title>TinDog</title>
-  <link rel="stylesheet" href="css/styles.css">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
-   <link rel="icon" type="" href="images/favicon.ico">
-
-
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title>Nigeria Gaming Community</title>
+	<meta charset = "UTF-8">
+	<meta name="description" content="About Nigerians that Love to Play Game!!">
+	<!--keywords for the search engine-->
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Paul">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href = "9jastyle.css" rel = "stylesheet">
 </head>
 
-<body background="https://scontent.flos2-1.fna.fbcdn.net/v/t1.15752-9/80682208_2465365700379149_1003798638066925568_n.jpg?_nc_cat=103&_nc_eui2=AeEqjI__Va_nzWQg2BI81aDQGc1ybp4QJVQKqP5OKWkvHagkmA7HAyekWahKqUuPJEojTOEvikQPagyTX-yoGw0SJ3FWrERFprUSxGEKujreFA&_nc_oc=AQnwrVsw3ZWUwVaFPiMi9GK79AE_DGbH_h49Fk1PSETGQNvZ5x-62HbR0bSFFbUbryw&_nc_ht=scontent.flos2-1.fna&oh=fd7909ce74c9bf8fd2db9fa82f955fb8&oe=5EAD2E91">
-
-<form action="../reg_index.php" method="post" autocomplete="off" onsubmit="return validate(this);">
-
-            <!-- Firstname -->
-            <div class="form_input">
-              <i class="far fa-user" aria-hidden="true"></i>
-              <input type="text" placeholder="Firstname" required="" autocomplete="off" name="firstname">
-            </div>
-
-            <!-- Lastname -->
-            <div class="form_input">
-              <i class="far fa-user" aria-hidden="true"></i>
-              <input type="text" placeholder="Lastname" required="" autocomplete="off" name="lastname">
-            </div>
-
-            <!-- username -->
-            <div class="form_input">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <input type="text" placeholder="Username" required="" autocomplete="off" name="username">
-            </div>
-
-            <!-- Birthday -->
-            
-            <div class="bday">
-               <i class="far fa-calendar" aria-hidden="true"></i>
-               <input type="date" class="start" name="dob" value="" min="1980-01-01" max="2005-01-01" required="">
-            </div>
-            
-            <!--Gender-->
-            <div class="bday">
-                <i class="fas fa-venus" aria-hidden="true"></i>
-                <select class="start" style="width: 80%;" name="gender" required="">
-                    <option value="">Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </div>
-
-          <!-- Email -->
-          <div class="form_input">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <input type="email" placeholder="Email" required="" autocomplete="off" name="email">
-          </div>
-          
-          <!-- Phone number -->
-          <div class="phone_input">
-            <span class="phonecon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-            <span class="defcode">+234</span><input type="tel" placeholder="Phone number" class="phonebar" maxlength="10" required="" autocomplete="off" name="callNum">
-          </div>
-
-          <!-- Password -->
-          <div class="form_input">
-            <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="password" placeholder="Password" required="" autocomplete="off" name="password">
-          </div>
-          
-          <!--Recaptcha-->
-          <div class="g-recaptcha" data-sitekey="6Le94q8UAAAAAJ3zyj1fB4ETmdFQXymodfxC_YSi"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le94q8UAAAAAJ3zyj1fB4ETmdFQXymodfxC_YSi&amp;co=aHR0cHM6Ly93ZWIuZXhvZHVzbGVhZ3VlLmNvbTo0NDM.&amp;hl=en&amp;v=mhgGrlTs_PbFQOW4ejlxlxZn&amp;size=normal&amp;cb=556ndkqwebj" width="304" height="78" role="presentation" name="a-zfhfdijm7bm9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
-
-          
-          <p style="text-align: left;">Have an account? click <a href="../index">Login</a> to return to login page.</p>
-          <button type="submit" class="btn" name="register">Register</button>
-          
-          <!-- Policy, Terms & Conditions -->
-          <div class="policy">By clicking Register, you agree to our <a href="#" onclick="document.getElementById('terms').classList.remove('hide');">Terms and conditions</a> and confirm that you have read our
-            <a href="#" onclick="document.getElementById('policy').classList.remove('hide');">Data and Cookie Use Policy</a>.
-         </div>
-
-      </form>
+<body>
+<ul id = "list">
+  <li><a href= Mine.htm id = "link" title = "Home">Home</a></li>
+  <li><a href= "#Games" id = "link" title = "Popular Games">Games</a></li>
+  <li><a href = "#Latest" title = "Latest Games" id = "link">Latest</a></li>
+  <li><a href= "#Event" id = "link" title = "Gaming Events">Event</a></li>
+  <li style = "float:right;"><a href= form2.htm id = "link" title = "Updates">Login</a></li>
+</ul>
 
 
-  <!-- Footer -->
-
-  <footer id="footer">
-
-    <div class="bottom-container">
-   <a class="btn" href="mailto:nigeriangamingcommunity@gmail.com">CONTACT US</a><br>
-
-  <a class="footer-link" href="https://web.facebook.com/groups/2436653499929397/">Facebook</a>
-  <a class="footer-link" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.youtube.com%2Fchannel%2FUCspdyxPRLdyEFMsWIKaZCwA%2Fvideos%3Fpbjreload%3D10%26fbclid%3DIwAR2cf55hwof5cvtYWb5QhQUI2O3ieWQPmZ0qKCzcaWaCI1HnJf-8Ce2eze0&h=AT0hjxwCNvQrFavis-XvrivLYbgaCbt7wVgolkRgVZysvOk4mm1pH2n5vWSz7mS-Bj0FW4R0mOiNPQzSpBBeEcmdBMRAAnA90SgfxRq_kOwK6NDLFt5qR1hc1jFt_kjR5Mjo">Youtube</a>
-  <a class="footer-link" href="https://www.instagram.com/nigeriangamingcommunity?r=nametag">Instagram</a>
-  <p class="footer-end">© 2019 The Nigerian Gaming Community.</p>
-</div>
-
-  </footer>
+<form action = mine.htm style = "margin-left: 400px">
+	<div class = "container">
+		<h1>Sign Up</h1>
+		<p style = "font-size: 20px">Please fill on this form to create an account. </p>
+		<hr style = "margin-right: 450px">
+		
+		<label for ="username"><b>Username</b></label><br>
+		<input type = "text" placeholder = "Enter a User Name" name = "username" required>
+		
+		<br><label for ="email"><b>Email</b></label><br>
+		<input type = "text" placeholder = "Enter an email" name = "email" required>
+		
+		
+		<br><label for ="psw"><b>Password</b></label><br>
+		<input type = "password" placeholder = "Enter a password" name = "psw" required>
+		
+		
+		<br><label for ="psw"><b>Re-enter Password</b></label><br>
+		<input type = "password" placeholder = "Re-enter the password" name = "re-enter password" required>
+		
+		<br><label>
+		<input type = "checkbox" checked = "unchecked" name = "remember" style = "margin-bottom: 15px">Remember Me
+		</label><br>
+		
+		
+		<p>By creating an account you agree to our <a href = "#" style = "color: dodgerblue">Terms & Privacy</a>.</p>
+		
+		<div class = "clearfix"><button type = "button" class = "cancelbtn">Cancel</button>
+			<button type = "submit" class = "signupbtn">Sign Up</button>
+		</div>
+	</div>
+</form>
 
 </body>
+
 </html>
